@@ -14,7 +14,7 @@ const Details = () => {
                 </div>
                 <div className="w-3/4 mx-auto space-y-2 text-center mt-8 mb-8">
                     <p className="leading-snug text-teal-600 text-xl font-medium mb-4">Price: ${price}</p>
-                    <p className='text-left pb-10'>{details}</p>
+                    <p className='text-left pb-10 text-lg'>{details}</p>
                 </div>
             </div>
         </div>
