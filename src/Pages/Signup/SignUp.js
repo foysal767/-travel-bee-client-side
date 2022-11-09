@@ -3,22 +3,23 @@ import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 
 const SignUp = () => {
-    const {createUser} = useContext(AuthContext);
+    const { createUser } = useContext(AuthContext);
     const navigate = useNavigate()
-    const handleSignUp = event =>{
+    const handleSignUp = event => {
         event.preventDefault();
         const form = event.target;
         const email = form.email.value;
+        const displayName = form.name.value;
         const password = form.password.value;
 
         createUser(email, password)
-        .then(res => {
-            const user = res.user;
-            console.log(user)
-            form.reset()
-            navigate('/')
-        })
-        .catch(err => console.error(err))
+            .then(res => {
+                const user = res.user;
+                console.log(user)
+                form.reset()
+                navigate('/')
+            })
+            .catch(err => console.error(err))
     }
     return (
         <div className="hero w-full my-20">
@@ -30,7 +31,7 @@ const SignUp = () => {
                             <label className="label">
                                 <span className="label-text">Name</span>
                             </label>
-                            <input type="text" name='name' placeholder="Your Name" className="input input-bordered" />
+                            <input type="text" name='displayName' placeholder="Your Name" className="input input-bordered" required />
                         </div>
                         <div className="form-control">
                             <label className="label">
