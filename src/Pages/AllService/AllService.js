@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import SingleService from './SingleService';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
 
 const AllService = () => {
     const [allService, setAllService] = useState([]);

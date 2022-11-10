@@ -2,6 +2,9 @@ import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import Review from './Review';
+import { PhotoProvider, PhotoView } from 'react-photo-view';
+import 'react-photo-view/dist/react-photo-view.css';
+
 
 const Details = () => {
     const { user } = useContext(AuthContext);
@@ -56,7 +59,12 @@ const Details = () => {
                 </div>
                 <div className="">
                     <div className="">
-                        <img src={img} alt={service_name} className="w-3/4 mx-auto rounded-md h-72 dark:bg-gray-500" />
+                        <PhotoProvider>
+                            <PhotoView src={img}>
+                                <img src={img} alt={service_name} className="w-3/4 mx-auto rounded-md h-72 dark:bg-gray-500" />
+                            </PhotoView>
+                        </PhotoProvider>
+
                     </div>
                     <div className="w-3/4 mx-auto space-y-2 text-center mt-8 mb-8">
                         <p className="leading-snug text-teal-600 text-xl font-medium mb-4">Price: ${price}</p>
