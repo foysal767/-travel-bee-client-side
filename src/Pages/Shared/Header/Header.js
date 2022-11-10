@@ -40,7 +40,11 @@ const Header = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a className="w-28 text-xl"><img src="https://images-platform.99static.com/KYp0S_AndeXTPfEoZ_8sg5gR36U=/121x202:1343x1424/500x500/top/smart/99designs-contests-attachments/125/125028/attachment_125028733" alt="" /></a>
+                <div className='flex items-center'>
+                    <a className="w-28 text-xl"><img src="https://images-platform.99static.com/KYp0S_AndeXTPfEoZ_8sg5gR36U=/121x202:1343x1424/500x500/top/smart/99designs-contests-attachments/125/125028/attachment_125028733" alt="" /></a>
+                    <h1 className='text-3xl font-bold text-teal-500'>travelBee</h1>
+                </div>
+
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
