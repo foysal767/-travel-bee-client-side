@@ -2,7 +2,7 @@
 
 // const UpdateReview = () => {
 //     // const handleStatusUpdated =id =>{
-//     //     fetch(`http://localhost:5000/my-review/${id}`, {
+//     //     fetch(`https://travel-bee-server-eight.vercel.app/my-review/${id}`, {
 //     //         method: 'PATCH',
 //     //         headers: {
 //     //             'content-type': 'application/json'

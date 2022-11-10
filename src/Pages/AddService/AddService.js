@@ -16,7 +16,7 @@ const AddService = () => {
             img: img,
             details: details
         }
-        fetch('http://localhost:5000/all-service', {
+        fetch('https://travel-bee-server-eight.vercel.app/all-service', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

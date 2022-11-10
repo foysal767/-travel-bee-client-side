@@ -9,7 +9,7 @@ const Details = () => {
     const [reviews, setReviews] = useState([])
     console.log(user)
     useEffect(() => {
-        fetch(`http://localhost:5000/reviews/${_id}`)
+        fetch(`https://travel-bee-server-eight.vercel.app/reviews/${_id}`)
             .then(res => res.json())
             .then(data => {
                 setReviews(data)
@@ -33,7 +33,7 @@ const Details = () => {
             name: name
         }
 
-        fetch('http://localhost:5000/reviews', {
+        fetch('https://travel-bee-server-eight.vercel.app/reviews', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

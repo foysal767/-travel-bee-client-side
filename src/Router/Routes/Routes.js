@@ -31,7 +31,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/service/:id',
-                loader: ({ params }) => fetch(`http://localhost:5000/all-service/${params.id}`),
+                loader: ({ params }) => fetch(`https://travel-bee-server-eight.vercel.app/all-service/${params.id}`),
                 element: <Details></Details>
             },
             {

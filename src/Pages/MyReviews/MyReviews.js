@@ -7,7 +7,7 @@ const MyReviews = () => {
     const [myReviews, setMyReviews] = useState([])
 
     useEffect(() => {
-        fetch(`http://localhost:5000/my-reviews/${user?.email}`)
+        fetch(`https://travel-bee-server-eight.vercel.app/my-reviews/${user?.email}`)
             .then(res => res.json())
             .then(data => {
                 setMyReviews(data)
@@ -19,7 +19,7 @@ const MyReviews = () => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure, you want to delete this review')
         if (proceed) {
-            fetch(`http://localhost:5000/my-reviews/${id}`, {
+            fetch(`https://travel-bee-server-eight.vercel.app/my-reviews/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json'
