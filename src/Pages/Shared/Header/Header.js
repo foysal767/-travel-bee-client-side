@@ -12,6 +12,7 @@ const Header = () => {
     }
 
     const menuItems = <>
+
         <li className='font-semibold'><Link to='/'>Home</Link></li>
         <li className='font-semibold'><Link to='/blogs'>Blogs</Link></li>
         {
@@ -29,7 +30,7 @@ const Header = () => {
         }
     </>
     return (
-        <div className="navbar h-20 mb-12 pt-12 bg-base-100">
+        <div className="w-10/12 mx-auto navbar h-20 mb-12 pt-12 bg-base-100">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -39,6 +40,7 @@ const Header = () => {
                         {menuItems}
                     </ul>
                 </div>
+                <a className="w-28 text-xl"><img src="https://images-platform.99static.com/KYp0S_AndeXTPfEoZ_8sg5gR36U=/121x202:1343x1424/500x500/top/smart/99designs-contests-attachments/125/125028/attachment_125028733" alt="" /></a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">
