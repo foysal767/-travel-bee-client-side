@@ -1,6 +1,8 @@
 import React from 'react';
+import useTitle from '../../hooks/useTitle';
 
 const AddService = () => {
+    useTitle('Add Service')
     const handleAddService = event => {
         event.preventDefault()
         const form = event.target;
@@ -42,7 +44,7 @@ const AddService = () => {
                         </div>
                         <div className="w-1/2 mx-auto col-span-full sm:col-span-3">
                             <label className="text-sm">Price</label>
-                            <input id="price" name='price' type="number" placeholder="Last name" className="w-full rounded-md input input-bordered input-accent" required />
+                            <input id="price" name='price' type="number" placeholder="price" className="w-full rounded-md input input-bordered input-accent" required />
                         </div>
                         <div className="w-1/2 mx-auto col-span-full sm:col-span-3">
                             <label className="text-sm">Email</label>

@@ -4,10 +4,12 @@ import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
 import Review from './Review';
 import { PhotoProvider, PhotoView } from 'react-photo-view';
 import 'react-photo-view/dist/react-photo-view.css';
+import useTitle from '../../hooks/useTitle';
 
 
 const Details = () => {
     const { user } = useContext(AuthContext);
+    useTitle('Details')
     const { _id, service_name, img, price, details } = useLoaderData()
     const [reviews, setReviews] = useState([])
     console.log(user)
