@@ -4,9 +4,11 @@ import AddService from "../../Pages/AddService/AddService";
 import AllService from "../../Pages/AllService/AllService";
 import Blogs from "../../Pages/Blogs/Blogs";
 import Details from "../../Pages/Details/Details";
+import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import Home from "../../Pages/Home/Home/Home";
 import Login from "../../Pages/Login/Login";
 import MyReviews from "../../Pages/MyReviews/MyReviews";
+import UpdateReview from "../../Pages/MyReviews/UpdateReview";
 import SignUp from "../../Pages/Signup/SignUp";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
@@ -43,12 +45,19 @@ const router = createBrowserRouter([
             {
                 path: '/signup',
                 element: <SignUp></SignUp>
-            }, {
+            },
+            {
                 path: '/login',
                 element: <Login></Login>
-            }
+            },
+            
         ]
+    },
+    {
+        path: '*',
+        element: <ErrorPage></ErrorPage>
     }
+    
 ])
 
 export default router;

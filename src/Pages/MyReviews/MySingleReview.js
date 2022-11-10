@@ -53,7 +53,10 @@ const MySingleReview = ({ myReview, handleDelete }) => {
                     <p className='mb-4 text-base font-medium'>Service Name: {service_name}</p>
                     <p>{review}</p>
                 </div>
-                <Link className='mx-auto'><button onClick={() => handleDelete(_id)} className='btn btn-outline btn-error mt-4 text-center'>Delete</button></Link>
+                <div className='w-10/12 mx-auto flex justify-between'>
+                    <Link><button className='btn btn-outline btn-warning mt-4 text-center'>Edit Review</button></Link>
+                    <Link className=''><button onClick={() => handleDelete(_id)} className='btn btn-outline btn-error mt-4 text-center'>Delete</button></Link>
+                </div>
             </div>
         </div>
     );
