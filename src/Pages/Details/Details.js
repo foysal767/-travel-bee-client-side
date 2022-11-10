@@ -73,7 +73,6 @@ const Details = () => {
                             </div>
                             <button className='btn btn-accent text-center' type="submit">Submit</button>
                         </form>
-
                     </div>
                 </div>
             </div>
