@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+Website Name: travelBee
+Website live link: https://travel-bee-19cf2.web.app/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Description About travelBee:
 
-## Available Scripts
+# This is a tourist guide service-related website. Here, you can hire a tourist guide to enjoy the full tour. And give feedback/review about specific services.
 
-In the project directory, you can run:
+# Home page of this website: You can see a navbar, and a hero section, one of the main features of this website is the service section, then another two sections are available here. The footer section is also available on this website. But, in the service section, you can see only 3 services. Bottom of this service section you can see a see all button. If you hit this button you will go service page.
 
-### `npm start`
+# service page: You can see all services on this page. And the bottom of every service card, see the Details button. If you hit this button it will go a private route. And see all description about service. And another section is the review section on this page. You can see all reviews of this service.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# You can add service and review. And you can delete the review which review was added to you.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# On this website a login page and sign-up page are available. Also, You can continue with google. 
 
-### `npm test`
+# Uses In this website: React, React-router-dom, firebase, MongoDB, node, express, daisyUi, cors, etc.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# On this website service data and review data get from the MongoDB database.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
